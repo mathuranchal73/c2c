@@ -1,0 +1,42 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Striped Table with Hover</h4>
+                        <p class="category">Here is a subtitle for this table</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                          <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>CategoryId</th>
+                                    <th>QuestionType</th>
+                                    <th>Question Text</th>
+                                    <th>ExhibitId</th>
+                                    <th>Points</th>
+                                    <th>isActive</th>
+                                </tr>
+                            </thead>
+                            <tbody *ngFor="let Question of question">
+                                <tr>
+                                    <td> <span>{{Question.ID}}</span></td>
+                                    <td> <span>{{Question.QuestionCategoryId}}</span></td>
+                                    <td> <span>{{Question.QuestionType}}</span></td>
+                                    <td> <span>{{Question.Question1}}</span></td>
+                                    <td> <span>{{Question.ExhibitId}}</span></td>
+                                    <td> <span>{{Question.Points}}</span></td>
+                                    <td> <span>{{Question.isActive}}</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+       
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
